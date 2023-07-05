@@ -18,25 +18,25 @@ This codebase is a basic implementation of a Unix shell. It provides support for
 
 ## Code Structure
 
-The `main` function contains the primary read-evaluate-print loop (REPL) of the shell. This includes prompting for and reading input, parsing and executing the input commands.
+The <b>main</b> function contains the primary read-evaluate-print loop (REPL) of the shell. This includes prompting for and reading input, parsing and executing the input commands.
 
-The `wordsplit` function is responsible for splitting a string into words, recognizing comments, and handling backslash escapes.
+The <b>wordsplit</b> function is responsible for splitting a string into words, recognizing comments, and handling backslash escapes.
 
-The `expand` function is used for parameter expansion in the shell, substituting instances of '$' with appropriate values.
+The <b>expand</b> function is used for parameter expansion in the shell, substituting instances of '$' with appropriate values.
 
-The `param_scan` function finds the next instance of a parameter within a word and sets the start and end pointers to the parameter token.
+The <b>param_scan</b> function finds the next instance of a parameter within a word and sets the start and end pointers to the parameter token.
 
-The `build_str` function builds up a base string by appending supplied strings or character ranges to it.
+The <b>build_str</b> function builds up a base string by appending supplied strings or character ranges to it.
 
 ## Build and Usage
 
 To build this shell, use a C compiler like gcc.
 
-`gcc shell.c -o shell`
+`gcc smallsh.c -o smallsh`
 
 To run the shell, use the following command.
 
-`./shell`
+`./smallsh`
 
 You can now type in commands at the prompt as you would in a regular shell. Press Ctrl+C to stop a running process and Ctrl+Z to pause a running process.
 
