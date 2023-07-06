@@ -18,15 +18,15 @@ This codebase is a basic implementation of a Unix shell. It provides support for
 
 ## Code Structure
 
-The <b>main</b> function contains the primary read-evaluate-print loop (REPL) of the shell. This includes prompting for and reading input, parsing and executing the input commands.
+The <b>'main'</b> function contains the primary read-evaluate-print loop (REPL) of the shell. This includes prompting for and reading input, parsing and executing the input commands.
 
-The <b>wordsplit</b> function is responsible for splitting a string into words, recognizing comments, and handling backslash escapes.
+The <b>'wordsplit'</b> function is responsible for splitting a string into words, recognizing comments, and handling backslash escapes.
 
-The <b>expand</b> function is used for parameter expansion in the shell, substituting instances of '$' with appropriate values.
+The <b>'expand'</b> function is used for parameter expansion in the shell, substituting instances of '$' with appropriate values.
 
-The <b>param_scan</b> function finds the next instance of a parameter within a word and sets the start and end pointers to the parameter token.
+The <b>'param_scan'</b> function finds the next instance of a parameter within a word and sets the start and end pointers to the parameter token.
 
-The <b>build_str</b> function builds up a base string by appending supplied strings or character ranges to it.
+The <b>'build_str'</b> function builds up a base string by appending supplied strings or character ranges to it.
 
 ## Build and Usage
 
@@ -52,4 +52,4 @@ The shell supports the redirection operators '<', '>', '>>', and '&'. These can 
 
 ## Limitations
 
-The shell is basic and does not provide advanced features like command history, job control, tab completion, etc. The shell also lacks proper error handling in some scenarios.
+The shell is basic and does not provide advanced features like command history, job control, tab completion, etc.
